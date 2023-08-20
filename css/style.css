@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+    margin: 14px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 22px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 26px;
+}
+
+.post {
+    display: flex;
+}
+
+.post-content {
+    display: flex;
+    align-items: center;
+}
+
+.desc {
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+.btn-post {
+    padding: 8px 12px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: #ffa800;
+    cursor: pointer;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+.btn-post:hover {
+    opacity: 1;
+}
+
+
+.product h2 {
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 600;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item {
+    width: 32%;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item:hover .product-info{
+    cursor: pointer;
+    transform: translateY(0);
+}
+
+.product-item img {
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.product-item img:hover {
+    scale: 1.2;
+}
+
+.product-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #fff;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+.product-info h3 {
+    margin: 16px;
+    font-size: 16px;
+}
+
+.product-info .product-price {
+    margin: 12px 0;
+}
+
+.btn-product {
+    width: 100%;
+    border: none;
+    padding: 8px 12px;
+    background-color: #444;
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    background-color: #021a34;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+footer p {
+    color: #fff;
+}
+
+.btn-send {
+    background-color: #ffa800;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+footer input {
+    padding: 8px 12px;
+    outline: none;
+    border: 2px solid #ffa800;
+    border-radius: 3px;
+}
